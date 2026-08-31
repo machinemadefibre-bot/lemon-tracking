@@ -6,8 +6,9 @@ First run:
 
 1. Install LemonTracking-Android.apk.
 2. Open Lemon Tracking.
-3. Select Open Usage Access and enable Lemon Tracking in Android Settings.
-4. Return to the app and select Refresh today.
+3. On Android 15 and newer, or when Android shows a restricted-setting message, select Open app info. In App info, open the three-dot menu and select Allow restricted settings.
+4. Select Open Usage Access and enable Lemon Tracking in Android Settings.
+5. Return to the app and select Refresh today.
 
 Android supplies aggregate usage statistics. The app labels its records automatic and stores application, package, duration and source fields locally.
 

@@ -16,6 +16,7 @@ const faqs = [
   ['How does the macOS package work?', 'The macOS Apple Silicon agent uses System Events for the foreground application and IOHIDSystem for idle time. The first run may require Accessibility permission in System Settings.'],
   ['How does the Linux package work?', 'The Linux x86_64 agent uses xprop for X11 foreground application lookup and xprintidle when installed. Wayland sessions are identified separately and use a compositor-specific foreground integration.'],
   ['How does the Android package work?', 'The Android APK uses the system Usage Access permission to read aggregate foreground application time for the current day. It has no Internet permission and writes local JSON records.'],
+  ['Why can Android show a restricted-setting message?', 'Android 15 and some device versions require a sideloaded APK to be confirmed in App info before Usage Access can be enabled.'],
   ['Are there browser extension or iOS packages?', 'There is no browser extension or iOS package in the 0.1.0 release.'],
   ['Does the Windows package include ActivityWatch?', 'No. The 0.1.0 collector uses an independent implementation. ActivityWatch appears as an upstream reference in the legal information.'],
   ['Is Lemon Tracking a commercial tracking service?', 'Lemon Tracking is distributed as local software packages and a documentation website rather than as a hosted tracking service.'],

@@ -84,15 +84,32 @@ public final class MainActivity extends Activity {
                 15, TEXT_PRIMARY);
         root.addView(description, marginTop(20));
 
+        TextView setupHint = text(
+                android.os.Build.VERSION.SDK_INT >= 35
+                        ? "Android 15 and newer may require App info > Allow restricted settings before Usage Access."
+                        : "If Android shows a restricted-setting message, use App info > Allow restricted settings first.",
+                13, TEXT_MUTED);
+        root.addView(setupHint, marginTop(10));
+
         accessStatus = text("Usage Access: checking", 15, TEXT_PRIMARY);
         root.addView(accessStatus, marginTop(18));
+
+        Button openAppInfo = button("Open app info");
+        openAppInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+                intent.setData(android.net.Uri.parse("package:" + getPackageName()));
+                startActivity(intent);
+            }
+        });
+        root.addView(openAppInfo, marginTop(8));
 
         Button openSettings = button("Open Usage Access");
         openSettings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Settings.ACTION_USAGE_ACCESS_SETTINGS);
-                intent.setData(android.net.Uri.parse("package:" + getPackageName()));
                 startActivity(intent);
             }
         });
