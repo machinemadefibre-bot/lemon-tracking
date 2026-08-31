@@ -3,12 +3,12 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: { absolute: 'Lemon Tracking — Local Screen Usage Tracker' },
-  description: 'Local Windows application and screen-usage tracking.',
+  description: 'Local desktop and Android application usage tracking.',
   alternates: { canonical: '/' },
 };
 
 const features = [
-  'Foreground application tracking with process identity and duration on Windows, macOS and Linux',
+  'Foreground application tracking with process identity and duration on Windows, macOS, Linux and Android',
   'Separate idle intervals from active intervals',
   'Daily totals, clock-time timelines and category summaries',
   'Device rows for overlapping screen activity',
@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <SiteShell current="Home">
       <h1>Lemon Tracking</h1>
-      <p>Local application usage statistics for Windows.</p>
+      <p>Local application usage statistics for desktop and Android.</p>
       <p>
         Lemon Tracking records foreground application identity, timing, idle state, category and
         source. The local console provides daily totals, timelines, application summaries,
@@ -29,11 +29,12 @@ export default function Home() {
 
       <h2>Download</h2>
       <table className="plain-table download-table">
-        <thead><tr><th>Link</th><th>Type</th><th>Windows</th><th>Size</th></tr></thead>
+        <thead><tr><th>Link</th><th>Type</th><th>System</th><th>Size</th></tr></thead>
         <tbody>
           <tr><td><a href="/windows/LemonTracking-Windows-x64-Portable.zip" download>LemonTracking-Windows-x64-Portable.zip</a></td><td>Portable ZIP</td><td>Windows x64</td><td>98 KB</td></tr>
           <tr><td><a href="/macos/LemonTracking-macOS-arm64.tar.gz" download>LemonTracking-macOS-arm64.tar.gz</a></td><td>Portable archive</td><td>macOS Apple Silicon</td><td>32 KB</td></tr>
           <tr><td><a href="/linux/LemonTracking-Linux-x86_64.tar.gz" download>LemonTracking-Linux-x86_64.tar.gz</a></td><td>Portable archive</td><td>Linux x86_64</td><td>34 KB</td></tr>
+          <tr><td><a href="/android/LemonTracking-Android.apk" download>LemonTracking-Android.apk</a></td><td>APK</td><td>Android</td><td>17 KB</td></tr>
         </tbody>
       </table>
       <p><a href="/download/">Download details and release history</a></p>
@@ -44,10 +45,10 @@ export default function Home() {
       </ul>
 
       <h2>Compatibility</h2>
-      <p>Windows x64 desktop collector, macOS Apple Silicon local agent and Linux x86_64 local agent. The Windows portable package uses the .NET 10 desktop runtime; the macOS and Linux archives use the .NET 10 runtime for their target platform.</p>
+      <p>Windows x64 desktop collector, macOS Apple Silicon local agent, Linux x86_64 local agent and Android local application summary through Usage Access. The Windows portable package uses the .NET 10 desktop runtime; the macOS and Linux archives use the .NET 10 runtime for their target platform.</p>
 
       <h2>Release history</h2>
-      <p><a href="/changelog/">0.1.0 — desktop collectors and local console</a></p>
+      <p><a href="/changelog/">0.1.0 — desktop collectors, Android package and local console</a></p>
     </SiteShell>
   );
 }
