@@ -7,3 +7,18 @@
   Content-Disposition: attachment
   Content-Type: application/zip
   Cache-Control: public, max-age=3600
+
+/macos/*
+  Content-Disposition: attachment
+  Content-Type: application/gzip
+  Cache-Control: public, max-age=3600
+
+/linux/*
+  Content-Disposition: attachment
+  Content-Type: application/gzip
+  Cache-Control: public, max-age=3600
+
+/android/*
+  Content-Disposition: attachment
+  Content-Type: application/vnd.android.package-archive
+  Cache-Control: public, max-age=3600
