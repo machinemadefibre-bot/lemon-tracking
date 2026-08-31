@@ -147,6 +147,7 @@ h3 { font-size: 15px; line-height: 1.35; margin-bottom: 7px; }
 .metric-card { border: 1px solid #cbd0d0; background: #fff; padding: 13px; }
 .metric-card span { display: block; color: #6c7579; font-size: 11px; }
 .metric-card strong { display: block; color: #273b49; font-size: 21px; line-height: 1.2; margin: 4px 0 2px; }
+.metric-card .metric-value-text { font-size: 15px; overflow-wrap: anywhere; }
 .metric-card small { color: #7a8184; font-size: 10px; }
 .console-section { margin-top: 22px; }
 .console-section h2 { color: #273b49; font-size: 16px; border-bottom: 1px solid #cbd0d0; padding-bottom: 7px; }
@@ -157,6 +158,8 @@ h3 { font-size: 15px; line-height: 1.35; margin-bottom: 7px; }
 .empty-state { border: 1px dashed #b7bdbc; padding: 28px 18px; text-align: center; color: #70787c; background: #fff; }
 .empty-state strong { display: block; color: #3f484e; margin-bottom: 4px; }
 .filter-row { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 12px; }
+.timeline-range-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.button-selected { background: #fff8c9; border-color: #c2a914; color: #242424; }
 .field-inline { display: inline-flex; align-items: center; gap: 7px; color: #596268; font-size: 11px; }
 .field-inline select, .field-inline input, .form-grid input, .form-grid select, .form-grid textarea { border: 1px solid #aeb5b7; background: #fff; padding: 7px 8px; color: var(--ink); min-width: 0; }
 .console-table { font-size: 11px; }
@@ -185,10 +188,14 @@ h3 { font-size: 15px; line-height: 1.35; margin-bottom: 7px; }
 .consent-card ul { color: #565e63; padding-left: 20px; }
 .consent-actions { display: flex; gap: 8px; justify-content: flex-end; border-top: 1px solid var(--line); padding-top: 15px; margin-top: 18px; }
 .modal-backdrop { position: fixed; inset: 0; z-index: 4; background: rgb(31 38 42 / 27%); display: grid; place-items: center; padding: 18px; }
-.modal-card { width: min(710px, 100%); max-height: calc(100vh - 40px); overflow: auto; background: #fff; border: 1px solid #7d8588; box-shadow: 0 10px 28px rgb(0 0 0 / 20%); padding: 21px; }
+.modal-card { width: min(1100px, 100%); max-height: calc(100vh - 40px); overflow: auto; background: #fff; border: 1px solid #7d8588; box-shadow: 0 10px 28px rgb(0 0 0 / 20%); padding: 21px; }
 .modal-header { display: flex; justify-content: space-between; gap: 12px; align-items: center; border-bottom: 1px solid var(--line); padding-bottom: 10px; margin-bottom: 16px; }
 .modal-header h2 { margin: 0; color: #273b49; }
 .icon-button { border: 0; background: transparent; font-size: 20px; color: #566066; }
+.backfill-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 14px 0; padding: 10px; border: 1px solid #d0d4d3; background: #f5f6f4; }
+.copy-date-field { flex: 1 1 260px; }
+.copy-date-field input { flex: 1; }
+.row-actions { display: flex; flex-wrap: wrap; gap: 4px; }
 .app-list { display: grid; gap: 7px; }
 .app-list-row { display: grid; grid-template-columns: minmax(140px, 1fr) 105px 190px; gap: 10px; align-items: center; background: #fff; border: 1px solid #d0d5d3; padding: 8px 9px; }
 .app-list-row strong { font-size: 12px; }

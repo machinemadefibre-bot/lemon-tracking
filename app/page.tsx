@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 const features = [
-  'Foreground application tracking with process identity and duration',
+  'Foreground application tracking with process identity and duration on Windows, macOS and Linux',
   'Separate idle intervals from active intervals',
   'Daily totals, clock-time timelines and category summaries',
   'Device rows for overlapping screen activity',
@@ -30,7 +30,11 @@ export default function Home() {
       <h2>Download</h2>
       <table className="plain-table download-table">
         <thead><tr><th>Link</th><th>Type</th><th>Windows</th><th>Size</th></tr></thead>
-        <tbody><tr><td><a href="/windows/LemonTracking-Windows-x64-Portable.zip" download>LemonTracking-Windows-x64-Portable.zip</a></td><td>Portable ZIP</td><td>x64</td><td>98 KB</td></tr></tbody>
+        <tbody>
+          <tr><td><a href="/windows/LemonTracking-Windows-x64-Portable.zip" download>LemonTracking-Windows-x64-Portable.zip</a></td><td>Portable ZIP</td><td>Windows x64</td><td>98 KB</td></tr>
+          <tr><td><a href="/macos/LemonTracking-macOS-arm64.tar.gz" download>LemonTracking-macOS-arm64.tar.gz</a></td><td>Portable archive</td><td>macOS Apple Silicon</td><td>29 MB</td></tr>
+          <tr><td><a href="/linux/LemonTracking-Linux-x86_64.tar.gz" download>LemonTracking-Linux-x86_64.tar.gz</a></td><td>Portable archive</td><td>Linux x86_64</td><td>31 MB</td></tr>
+        </tbody>
       </table>
       <p><a href="/download/">Download details and release history</a></p>
 
@@ -40,10 +44,10 @@ export default function Home() {
       </ul>
 
       <h2>Compatibility</h2>
-      <p>Windows x64 desktop collector. The portable package uses the .NET 10 desktop runtime.</p>
+      <p>Windows x64 desktop collector, macOS Apple Silicon local agent and Linux x86_64 local agent. The Windows portable package uses the .NET 10 desktop runtime; the macOS and Linux archives include their .NET runtime.</p>
 
       <h2>Release history</h2>
-      <p><a href="/changelog/">0.1.0 — Windows x64 collector and local console</a></p>
+      <p><a href="/changelog/">0.1.0 — desktop collectors and local console</a></p>
     </SiteShell>
   );
 }

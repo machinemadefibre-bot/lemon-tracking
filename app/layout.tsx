@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     default: 'Lemon Tracking — Local Screen Usage Tracker',
     template: '%s — Lemon Tracking',
   },
-  description: 'Local Windows application and screen-usage tracking.',
+  description: 'Local application and screen-usage tracking.',
   robots: { index: true, follow: true },
 };
 
@@ -16,9 +16,9 @@ const softwareSchema = {
   '@type': 'SoftwareApplication',
   name: 'Lemon Tracking',
   url: 'https://lemontracking.org/',
-  description: 'Local Windows application and screen-usage tracking.',
+  description: 'Local application and screen-usage tracking on Windows, macOS and Linux.',
   applicationCategory: 'UtilitiesApplication',
-  operatingSystem: 'Windows',
+  operatingSystem: 'Windows, macOS, Linux',
   downloadUrl: 'https://lemontracking.org/download/',
 };
 

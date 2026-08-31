@@ -18,7 +18,7 @@ export default function FeaturesPage() {
   return (
     <SiteShell current="Features">
       <h1>Features</h1>
-      <p>Foreground application records, summaries, timelines and local history tools for Windows.</p>
+      <p>Foreground application records, summaries, timelines and local history tools for Windows, macOS and Linux.</p>
       <h2>The main features of Lemon Tracking</h2>
       <ul className="feature-list">{features.map(([title, copy]) => <li key={title}><strong>{title}.</strong> {copy}</li>)}</ul>
       <h2>Timeline data</h2>
