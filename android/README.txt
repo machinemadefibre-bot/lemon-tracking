@@ -1,4 +1,4 @@
-Lemon Tracking Android 0.1.0
+Lemon Tracking Android 0.1.1
 
 This package uses Android Usage Access to read foreground application time for the current day. The app has no INTERNET permission and writes records.json to its private application-data directory.
 

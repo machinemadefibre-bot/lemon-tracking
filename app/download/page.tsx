@@ -12,7 +12,7 @@ export default function DownloadPage() {
   return (
     <SiteShell current="Download">
       <h1>Download</h1>
-      <p>Download Lemon Tracking 0.1.0 packages for Windows x64, macOS Apple Silicon, Linux x86_64 and Android.</p>
+      <p>Download Lemon Tracking 0.1.1 packages for Windows x64, macOS Apple Silicon, Linux x86_64 and Android.</p>
       <table className="plain-table download-table">
         <thead><tr><th>Link</th><th>Type</th><th>System</th><th>Description</th></tr></thead>
         <tbody>
@@ -24,14 +24,14 @@ export default function DownloadPage() {
       </table>
       <h2>Checksums</h2>
       <table className="plain-table"><thead><tr><th>File</th><th>Size (bytes)</th><th>SHA-256</th></tr></thead><tbody>
-        <tr><td>LemonTracking-Windows-x64-Portable.zip</td><td>98,754</td><td><code>AE124D471A880B40C01F4262630A3A398C88B3707416D851588C10BD2DDB574F</code></td></tr>
-        <tr><td>LemonTracking-macOS-arm64.tar.gz</td><td>31,984</td><td><code>259CE9AD19CA9CC2907EA8F15B42E445765802136B4BD6EA8E1E4C13CF61DEB7</code></td></tr>
-        <tr><td>LemonTracking-Linux-x86_64.tar.gz</td><td>34,331</td><td><code>EC1AF61A3A4C5E7D2E62E23C7A04D53FADFFC31194D5154339013800D95AC1E6</code></td></tr>
-        <tr><td>LemonTracking-Android.apk</td><td>16,791</td><td><code>F160E47A1216A2A164C1C626EC4FA7A24FD5D6899F81631850C98A6B6CA6977D</code></td></tr>
+        <tr><td>LemonTracking-Windows-x64-Portable.zip</td><td>98,759</td><td><code>5209D7E36A5ECB64496ADBD04AE3C74A17698413CA52CF0ECCB150DA8D7CC689</code></td></tr>
+        <tr><td>LemonTracking-macOS-arm64.tar.gz</td><td>43,749</td><td><code>B230966D7C66EFA0F8F9860BC821F1EC33DF21396A9C50BD46785CFDD90F15A9</code></td></tr>
+        <tr><td>LemonTracking-Linux-x86_64.tar.gz</td><td>46,134</td><td><code>5AE3BB31518716B22D474F3FF4E0DD2C47CD5B443AA3D089206FF83755996FCA</code></td></tr>
+        <tr><td>LemonTracking-Android.apk</td><td>16,792</td><td><code>9E02FCFD0D5DC9A15FF5AC7DFD7B1EF17975D8D0868F99B63DEBAF0E84478A0A</code></td></tr>
       </tbody></table>
       <h2>Release history</h2>
-      <p><strong>0.1.0</strong> · Windows x64 collector, macOS Apple Silicon and Linux x86_64 local agents, plus Android APK</p>
-      <p><a href="/changelog/">Read the complete 0.1.0 changelog</a></p>
+      <p><strong>0.1.1</strong> · Windows header layout update and refreshed platform package version</p>
+      <p><a href="/changelog/">Read the complete 0.1.1 changelog</a></p>
       <h2>Documentation</h2>
       <p><a href="/docs/">Operating notes and record model</a></p>
     </SiteShell>

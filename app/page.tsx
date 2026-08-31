@@ -32,8 +32,8 @@ export default function Home() {
         <thead><tr><th>Link</th><th>Type</th><th>System</th><th>Size</th></tr></thead>
         <tbody>
           <tr><td><a href="/windows/LemonTracking-Windows-x64-Portable.zip" download>LemonTracking-Windows-x64-Portable.zip</a></td><td>Portable ZIP</td><td>Windows x64</td><td>98 KB</td></tr>
-          <tr><td><a href="/macos/LemonTracking-macOS-arm64.tar.gz" download>LemonTracking-macOS-arm64.tar.gz</a></td><td>Portable archive</td><td>macOS Apple Silicon</td><td>32 KB</td></tr>
-          <tr><td><a href="/linux/LemonTracking-Linux-x86_64.tar.gz" download>LemonTracking-Linux-x86_64.tar.gz</a></td><td>Portable archive</td><td>Linux x86_64</td><td>34 KB</td></tr>
+          <tr><td><a href="/macos/LemonTracking-macOS-arm64.tar.gz" download>LemonTracking-macOS-arm64.tar.gz</a></td><td>Portable archive</td><td>macOS Apple Silicon</td><td>44 KB</td></tr>
+          <tr><td><a href="/linux/LemonTracking-Linux-x86_64.tar.gz" download>LemonTracking-Linux-x86_64.tar.gz</a></td><td>Portable archive</td><td>Linux x86_64</td><td>46 KB</td></tr>
           <tr><td><a href="/android/LemonTracking-Android.apk" download>LemonTracking-Android.apk</a></td><td>APK</td><td>Android</td><td>17 KB</td></tr>
         </tbody>
       </table>
@@ -48,7 +48,7 @@ export default function Home() {
       <p>Windows x64 desktop collector, macOS Apple Silicon local agent, Linux x86_64 local agent and Android local application summary through Usage Access. The Windows portable package uses the .NET 10 desktop runtime; the macOS and Linux archives use the .NET 10 runtime for their target platform.</p>
 
       <h2>Release history</h2>
-      <p><a href="/changelog/">0.1.0 — desktop collectors, Android package and local console</a></p>
+      <p><a href="/changelog/">0.1.1 — Windows header layout update</a></p>
     </SiteShell>
   );
 }
