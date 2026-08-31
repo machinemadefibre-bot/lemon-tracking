@@ -1,6 +1,6 @@
 param(
     [string]$SdkRoot = $env:LEMON_ANDROID_SDK,
-    [string]$OutputPath = (Join-Path $PSScriptRoot '..\public\android\LemonTracking-Android.apk')
+    [string]$OutputPath = (Join-Path $PSScriptRoot '..\assets\downloads\LemonTracking-Android.apk')
 )
 
 $ErrorActionPreference = 'Stop'
