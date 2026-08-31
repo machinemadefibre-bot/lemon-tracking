@@ -1,4 +1,10 @@
 import SiteShell from '@/components/site-shell';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = { title: 'Downloads', alternates: { canonical: '/download/' } };
+
+const portableUrl = '/windows/LemonTracking-Windows-x64-Portable.zip';
+const portableSha256 = '0F396DD5455ED4F1F01CA72600927470EB931FC5BA6FFBCD547929D84B9D082C';
 
 export default function DownloadPage() {
   return (
@@ -12,7 +18,7 @@ export default function DownloadPage() {
         <table className="plain-table download-table">
           <thead><tr><th>Platform</th><th>Download</th><th>Architecture</th><th>Notes</th></tr></thead>
           <tbody>
-            <tr><td>Windows</td><td><a href="/downloads/lemon-tracking-0.1.0-win-x64.zip">Lemon Tracking 0.1.0</a></td><td>x64</td><td>Portable ZIP. Requires the .NET 10 desktop runtime.</td></tr>
+            <tr><td>Windows</td><td><a href={portableUrl} download>LemonTracking-Windows-x64-Portable.zip</a></td><td>x64</td><td>Portable ZIP. Requires the .NET 10 desktop runtime.</td></tr>
             <tr><td>macOS</td><td className="unavailable">Not currently available.</td><td>—</td><td>Unsigned build not prepared.</td></tr>
             <tr><td>Linux</td><td className="unavailable">Not currently available.</td><td>—</td><td>X11 and Wayland packages not prepared.</td></tr>
             <tr><td>Android</td><td className="unavailable">Not currently available.</td><td>—</td><td>No mobile client in 0.1.0.</td></tr>
@@ -21,6 +27,7 @@ export default function DownloadPage() {
           </tbody>
         </table>
         <p className="status-text" style={{ marginTop: 16 }}>Each listed download is checked into the release package only after a successful build.</p>
+        <div className="code-block checksum-block"><strong>SHA-256</strong><br />{portableSha256}  LemonTracking-Windows-x64-Portable.zip</div>
       </section>
       <section className="home-grid">
         <div className="copy-block"><p className="eyebrow">AFTER INSTALLATION</p><h2>Start with consent</h2><p>The Windows application asks before collection begins. Start Tracking enables the local collector; Exit leaves it stopped.</p></div>

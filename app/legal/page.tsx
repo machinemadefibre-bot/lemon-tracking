@@ -1,4 +1,7 @@
 import SiteShell from '@/components/site-shell';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = { title: 'Legal Information', alternates: { canonical: '/legal/' } };
 
 export default function LegalPage() {
   return (

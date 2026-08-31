@@ -8,7 +8,6 @@ const links = [
   ['Documentation', '/docs/'],
   ['FAQ', '/faq/'],
   ['Changelog', '/changelog/'],
-  ['Legal Information', '/legal/'],
 ] as const;
 
 export default function SiteShell({ children, current }: { children: ReactNode; current?: string }) {
@@ -17,7 +16,6 @@ export default function SiteShell({ children, current }: { children: ReactNode; 
       <header className="site-header">
         <div className="site-header-inner">
           <a className="brand" href="/" aria-label="Lemon Tracking home">
-            <span className="lemon-mark" aria-hidden="true" />
             <span className="brand-name">Lemon Tracking</span>
           </a>
           <nav className="site-nav" aria-label="Primary navigation">

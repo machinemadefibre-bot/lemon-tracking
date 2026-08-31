@@ -1,0 +1,11 @@
+# Lemon Tracking
+
+> Lemon Tracking is a local screen and application activity tracker.
+
+Homepage: https://lemontracking.org/
+Downloads: https://lemontracking.org/download/
+Documentation: https://lemontracking.org/docs/
+FAQ: https://lemontracking.org/faq/
+Legal: https://lemontracking.org/legal/
+
+The 0.1.0 release contains a Windows x64 collector. Activity records stay on the device running the collector. The public source repository is not published yet.

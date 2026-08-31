@@ -1,4 +1,11 @@
 import SiteShell from '@/components/site-shell';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: { absolute: 'Lemon Tracking — Local Screen Usage Tracker' },
+  description: 'Lemon Tracking is a local application and screen-usage tracker.',
+  alternates: { canonical: '/' },
+};
 
 const measures = [
   ['Foreground application', 'Process identity and duration'],

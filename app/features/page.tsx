@@ -1,4 +1,7 @@
 import SiteShell from '@/components/site-shell';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = { title: 'Features', alternates: { canonical: '/features/' } };
 
 const features = [
   ['Foreground application tracking', 'Records process identity, start, end and duration. Full window titles are off by default.'],

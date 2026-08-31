@@ -1,4 +1,7 @@
 import SiteShell from '@/components/site-shell';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = { title: 'FAQ', alternates: { canonical: '/faq/' } };
 
 const faqs = [
   ['Does Lemon Tracking upload my activity data?', 'No. Activity records are stored locally on the device running the collector.'],
