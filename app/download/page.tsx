@@ -24,7 +24,7 @@ export default function DownloadPage() {
       </table>
       <h2>Checksums</h2>
       <table className="plain-table"><thead><tr><th>File</th><th>Size (bytes)</th><th>SHA-256</th></tr></thead><tbody>
-        <tr><td>LemonTracking-Windows-x64-Portable.zip</td><td>98,677</td><td><code>0F396DD5455ED4F1F01CA72600927470EB931FC5BA6FFBCD547929D84B9D082C</code></td></tr>
+        <tr><td>LemonTracking-Windows-x64-Portable.zip</td><td>98,754</td><td><code>AE124D471A880B40C01F4262630A3A398C88B3707416D851588C10BD2DDB574F</code></td></tr>
         <tr><td>LemonTracking-macOS-arm64.tar.gz</td><td>31,984</td><td><code>259CE9AD19CA9CC2907EA8F15B42E445765802136B4BD6EA8E1E4C13CF61DEB7</code></td></tr>
         <tr><td>LemonTracking-Linux-x86_64.tar.gz</td><td>34,331</td><td><code>EC1AF61A3A4C5E7D2E62E23C7A04D53FADFFC31194D5154339013800D95AC1E6</code></td></tr>
         <tr><td>LemonTracking-Android.apk</td><td>16,791</td><td><code>F160E47A1216A2A164C1C626EC4FA7A24FD5D6899F81631850C98A6B6CA6977D</code></td></tr>
