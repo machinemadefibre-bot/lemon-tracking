@@ -48,7 +48,7 @@ export default function Home() {
       <p>Windows x64 desktop collector, macOS Apple Silicon local agent, Linux x86_64 local agent and Android local application summary through Usage Access. The Windows portable package uses the .NET 10 desktop runtime; the macOS and Linux archives use the .NET 10 runtime for their target platform.</p>
 
       <h2>Release history</h2>
-      <p><a href="/changelog/">0.1.1 — Windows header layout update</a></p>
+      <p><a href="/changelog/">0.1.2 — Favicon compatibility update</a></p>
     </SiteShell>
   );
 }

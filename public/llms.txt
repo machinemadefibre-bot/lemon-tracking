@@ -7,4 +7,4 @@ Downloads: https://lemontracking.org/download/
 Documentation: https://lemontracking.org/docs/
 FAQ: https://lemontracking.org/faq/
 
-The 0.1.1 release contains a Windows x64 collector, a macOS Apple Silicon agent, a Linux x86_64 agent and an Android APK using Usage Access for current-day foreground summaries. Activity records stay on the device running the collector. Source publication status appears on the Legal Information page.
+The 0.1.2 release contains a Windows x64 collector, a macOS Apple Silicon agent, a Linux x86_64 agent and an Android APK using Usage Access for current-day foreground summaries. Activity records stay on the device running the collector. Source publication status appears on the Legal Information page.

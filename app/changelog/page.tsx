@@ -8,8 +8,15 @@ export default function ChangelogPage() {
     <SiteShell current="Changelog">
       <h1>Changelog</h1>
       <p>Release history for Lemon Tracking.</p>
+      <h2>0.1.2</h2>
+      <p className="status-text">2026-09-01 · Favicon compatibility update</p>
+      <ul>
+        <li>Declared the existing site icon in page metadata.</li>
+        <li>Added compatibility redirects for legacy <code>/favicon.ico</code> and <code>/favicon.png</code> requests.</li>
+        <li>Refreshed the version metadata across the site and platform packages.</li>
+      </ul>
       <h2>0.1.1</h2>
-      <p className="status-text">2026-09-01 · Windows header layout update</p>
+      <p className="status-text">2026-08-30 · Windows header layout update</p>
       <ul>
         <li>Separated the tracking status, Pause and Add past activity controls into a responsive header layout.</li>
         <li>Refreshed the Windows x64 package and platform version metadata.</li>

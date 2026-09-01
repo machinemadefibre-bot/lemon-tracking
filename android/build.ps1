@@ -45,7 +45,7 @@ $sources = Get-ChildItem -LiteralPath $sourceRoot -Filter '*.java' -Recurse | Se
 & $javac -encoding UTF-8 -source 8 -target 8 -Xlint:-options -proc:none -classpath $compilePlatformJar -d $classes $sources
 if ($LASTEXITCODE -ne 0) { throw 'javac failed' }
 
-& $aapt2 link -o $unsigned --manifest $manifest -I $platformJar --min-sdk-version 26 --target-sdk-version 35 --version-code 2 --version-name 0.1.1
+& $aapt2 link -o $unsigned --manifest $manifest -I $platformJar --min-sdk-version 26 --target-sdk-version 35 --version-code 3 --version-name 0.1.2
 if ($LASTEXITCODE -ne 0) { throw 'aapt2 link failed' }
 
 $classFiles = Get-ChildItem -LiteralPath $classes -Filter '*.class' -Recurse | Select-Object -ExpandProperty FullName

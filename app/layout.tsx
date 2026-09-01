@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   },
   description: 'Local application and screen-usage tracking on Windows, macOS, Linux and Android.',
   robots: { index: true, follow: true },
+  icons: { icon: '/favicon.svg', shortcut: '/favicon.svg' },
 };
 
 const softwareSchema = {

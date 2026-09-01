@@ -12,7 +12,7 @@ export default function DownloadPage() {
   return (
     <SiteShell current="Download">
       <h1>Download</h1>
-      <p>Download Lemon Tracking 0.1.1 packages for Windows x64, macOS Apple Silicon, Linux x86_64 and Android.</p>
+      <p>Download Lemon Tracking 0.1.2 packages for Windows x64, macOS Apple Silicon, Linux x86_64 and Android.</p>
       <table className="plain-table download-table">
         <thead><tr><th>Link</th><th>Type</th><th>System</th><th>Description</th></tr></thead>
         <tbody>
@@ -24,14 +24,14 @@ export default function DownloadPage() {
       </table>
       <h2>Checksums</h2>
       <table className="plain-table"><thead><tr><th>File</th><th>Size (bytes)</th><th>SHA-256</th></tr></thead><tbody>
-        <tr><td>LemonTracking-Windows-x64-Portable.zip</td><td>98,759</td><td><code>5209D7E36A5ECB64496ADBD04AE3C74A17698413CA52CF0ECCB150DA8D7CC689</code></td></tr>
-        <tr><td>LemonTracking-macOS-arm64.tar.gz</td><td>43,749</td><td><code>B230966D7C66EFA0F8F9860BC821F1EC33DF21396A9C50BD46785CFDD90F15A9</code></td></tr>
-        <tr><td>LemonTracking-Linux-x86_64.tar.gz</td><td>46,134</td><td><code>5AE3BB31518716B22D474F3FF4E0DD2C47CD5B443AA3D089206FF83755996FCA</code></td></tr>
-        <tr><td>LemonTracking-Android.apk</td><td>16,792</td><td><code>9E02FCFD0D5DC9A15FF5AC7DFD7B1EF17975D8D0868F99B63DEBAF0E84478A0A</code></td></tr>
+        <tr><td>LemonTracking-Windows-x64-Portable.zip</td><td>98,769</td><td><code>296C52682952F5D1EEC86D98A9092B5165F0E6950F72C4CCA9DCFD2D305CD5EF</code></td></tr>
+        <tr><td>LemonTracking-macOS-arm64.tar.gz</td><td>43,753</td><td><code>4EB0F5AB847584E9B017F772FA0E5FF551327DEA8F85DD983AB43292070752B4</code></td></tr>
+        <tr><td>LemonTracking-Linux-x86_64.tar.gz</td><td>46,143</td><td><code>E74B0C45536811D9785759DB1EC1EED4C1E9ABC050851C25EE171A8BE42934D4</code></td></tr>
+        <tr><td>LemonTracking-Android.apk</td><td>16,791</td><td><code>2E6060F4CF1E69A25E74A8FFCDD33474FCDCBBF79AC8611D10FE923F5D998B26</code></td></tr>
       </tbody></table>
       <h2>Release history</h2>
-      <p><strong>0.1.1</strong> · Windows header layout update and refreshed platform package version</p>
-      <p><a href="/changelog/">Read the complete 0.1.1 changelog</a></p>
+      <p><strong>0.1.2</strong> · Favicon compatibility update and refreshed platform package version</p>
+      <p><a href="/changelog/">Read the complete 0.1.2 changelog</a></p>
       <h2>Documentation</h2>
       <p><a href="/docs/">Operating notes and record model</a></p>
     </SiteShell>

@@ -7,7 +7,7 @@ export default function DocsPage() {
   return (
     <SiteShell current="Documentation">
       <h1>Documentation</h1>
-      <p>Operating notes for the 0.1.1 desktop collectors, Android application and local console.</p>
+      <p>Operating notes for the 0.1.2 desktop collectors, Android application and local console.</p>
       <h2>First run</h2>
       <ol><li>Launch Lemon Tracking.</li><li>Read the consent screen.</li><li>Select <strong>Start Tracking</strong> to enable collection, or <strong>Exit</strong> to leave it stopped.</li><li>Use the tray menu to pause, resume or reopen the application.</li></ol>
       <p>The collector begins after consent is stored.</p>
