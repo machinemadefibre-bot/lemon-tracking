@@ -4,10 +4,10 @@ import './globals.css';
 export const metadata: Metadata = {
   metadataBase: new URL('https://lemontracking.org'),
   title: {
-    default: 'Lemon Tracking — Local Screen Usage Tracker',
+    default: 'Lemon Tracking — A Complete and Objective Screen-Time Measurement Tool',
     template: '%s — Lemon Tracking',
   },
-  description: 'Local application and screen-usage tracking on Windows, macOS, Linux and Android.',
+  description: 'A complete, precise and objective way to measure screen time across phones, computers, televisions, tablets and game consoles.',
   robots: { index: true, follow: true },
   icons: { icon: '/favicon.svg', shortcut: '/favicon.svg' },
 };
@@ -17,7 +17,7 @@ const softwareSchema = {
   '@type': 'SoftwareApplication',
   name: 'Lemon Tracking',
   url: 'https://lemontracking.org/',
-  description: 'Local application and screen-usage tracking on Windows, macOS, Linux and Android.',
+  description: 'A complete, precise and objective way to measure screen time across phones, computers, televisions, tablets and game consoles.',
   applicationCategory: 'UtilitiesApplication',
   operatingSystem: 'Windows, macOS, Linux, Android',
   downloadUrl: 'https://lemontracking.org/download/',

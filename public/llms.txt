@@ -1,6 +1,6 @@
 # Lemon Tracking
 
-> Local screen and application activity tracking.
+> A complete and objective screen-time measurement tool.
 
 Homepage: https://lemontracking.org/
 Downloads: https://lemontracking.org/download/

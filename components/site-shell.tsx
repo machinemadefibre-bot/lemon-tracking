@@ -30,7 +30,7 @@ export default function SiteShell({ children, current }: { children: ReactNode; 
       <main className="site-main">{children}</main>
       <footer className="site-footer">
         <div className="site-footer-inner">
-          <p>Lemon Tracking · local application usage statistics · 0.1.2</p>
+          <p>Lemon Tracking · complete and objective screen-time measurement · 0.1.2</p>
           <div className="footer-links">
             <a href="/download/">Download</a>
             <a href="/docs/">Documentation</a>
