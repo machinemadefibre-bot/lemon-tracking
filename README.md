@@ -7,6 +7,7 @@ Lemon Tracking records foreground application activity and local screen-use reco
 ## Website and downloads
 
 - Website: <https://lemontracking.org/>
+- Source repository: <https://github.com/machinemadefibre-bot/lemon-tracking>
 - Download page: <https://lemontracking.org/download/>
 - Documentation: <https://lemontracking.org/docs/>
 - Screenshots: <https://lemontracking.org/screenshots/>

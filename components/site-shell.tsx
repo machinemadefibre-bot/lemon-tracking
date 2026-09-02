@@ -35,6 +35,7 @@ export default function SiteShell({ children, current }: { children: ReactNode; 
             <a href="/download/">Download</a>
             <a href="/docs/">Documentation</a>
             <a href="/legal/">Legal Information</a>
+            <a href="https://github.com/machinemadefibre-bot/lemon-tracking" rel="noreferrer">GitHub</a>
           </div>
         </div>
       </footer>
