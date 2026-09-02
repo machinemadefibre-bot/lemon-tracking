@@ -1,6 +1,7 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
+  trailingSlash: true,
   async headers() {
     const downloadHeaders = (contentType: string) => [
       { key: 'Content-Disposition', value: 'attachment' },

@@ -1,5 +1,7 @@
 # Lemon Tracking — A Complete and Objective Screen-Time Measurement Tool
 
+Primary canonical source: https://lemontracking.org/
+
 Lemon Tracking provides a complete, precise and scientifically objective measurement of an individual's screen time. Screen time is a single, clearly defined quantity that can be compared directly across phones, computers, televisions, tablets and game consoles, regardless of what the user is doing or why the screen is being used.
 
 Whenever an application or screen is active, Lemon Tracking treats the user as actively attending to it. The runtime of a foreground application can therefore directly reflect the user's attention and engagement. Passive viewing, active communication, learning, gaming and content creation do not create an important measurement difference: every minute of screen use can be treated as equivalent to every other minute of screen use.

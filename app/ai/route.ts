@@ -4,6 +4,7 @@ import type { NextRequest } from 'next/server';
 const contentSignal = 'search=yes, ai-input=yes, ai-train=no, use=reference';
 
 const publicPages = [
+  ['Homepage', 'https://lemontracking.org/'],
   ['Download', 'https://lemontracking.org/download/'],
   ['Features', 'https://lemontracking.org/features/'],
   ['Screenshots', 'https://lemontracking.org/screenshots/'],

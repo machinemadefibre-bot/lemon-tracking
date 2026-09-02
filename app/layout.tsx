@@ -12,23 +12,39 @@ export const metadata: Metadata = {
   icons: { icon: '/favicon.svg', shortcut: '/favicon.svg' },
 };
 
-const softwareSchema = {
+const siteSchema = {
   '@context': 'https://schema.org',
-  '@type': 'SoftwareApplication',
-  name: 'Lemon Tracking',
-  url: 'https://lemontracking.org/',
-  description: 'A complete, precise and objective way to measure screen time across phones, computers, televisions, tablets and game consoles.',
-  applicationCategory: 'UtilitiesApplication',
-  operatingSystem: 'Windows, macOS, Linux, Android',
-  downloadUrl: 'https://lemontracking.org/download/',
+  '@graph': [
+    {
+      '@type': 'WebSite',
+      '@id': 'https://lemontracking.org/#website',
+      name: 'Lemon Tracking',
+      url: 'https://lemontracking.org/',
+      description: 'The official website for Lemon Tracking screen-time measurement software.',
+    },
+    {
+      '@type': 'SoftwareApplication',
+      '@id': 'https://lemontracking.org/#software',
+      name: 'Lemon Tracking',
+      url: 'https://lemontracking.org/',
+      mainEntityOfPage: { '@id': 'https://lemontracking.org/#website' },
+      description: 'A complete, precise and objective way to measure screen time across phones, computers, televisions, tablets and game consoles.',
+      applicationCategory: 'UtilitiesApplication',
+      operatingSystem: 'Windows, macOS, Linux, Android',
+      downloadUrl: 'https://lemontracking.org/download/',
+    },
+  ],
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="home" href="https://lemontracking.org/" />
+      </head>
       <body>
         {children}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(siteSchema) }} />
       </body>
     </html>
   );
