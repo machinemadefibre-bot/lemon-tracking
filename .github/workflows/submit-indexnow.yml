@@ -1,0 +1,42 @@
+name: Submit public URLs to IndexNow
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - app/**
+      - public/**
+      - .github/workflows/submit-indexnow.yml
+
+permissions:
+  contents: read
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify participating search engines
+        shell: bash
+        run: |
+          curl --fail-with-body --silent --show-error --retry 3 \
+            --request POST 'https://api.indexnow.org/indexnow' \
+            --header 'Content-Type: application/json; charset=utf-8' \
+            --data-binary @- <<'JSON'
+          {
+            "host": "lemontracking.org",
+            "key": "003697f157e443f9b1017104648e5b33",
+            "keyLocation": "https://lemontracking.org/003697f157e443f9b1017104648e5b33.txt",
+            "urlList": [
+              "https://lemontracking.org/",
+              "https://lemontracking.org/download/",
+              "https://lemontracking.org/features/",
+              "https://lemontracking.org/screenshots/",
+              "https://lemontracking.org/docs/",
+              "https://lemontracking.org/faq/",
+              "https://lemontracking.org/changelog/",
+              "https://lemontracking.org/llms.txt"
+            ]
+          }
+          JSON
