@@ -1,0 +1,56 @@
+name: Publish release
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - package.json
+      - assets/downloads/**
+      - .github/workflows/publish-release.yml
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create the current release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          version="$(node -p "require('./package.json').version")"
+          tag="v${version}"
+
+          if gh release view "$tag" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "Release $tag already exists."
+            exit 0
+          fi
+
+          cat > "$RUNNER_TEMP/release-notes.md" <<'EOF'
+          Downloads for Windows x64, macOS Apple Silicon, Linux x86_64 and Android.
+
+          Full documentation and release history: https://lemontracking.org/
+
+          SHA-256 checksums:
+
+          - `296C52682952F5D1EEC86D98A9092B5165F0E6950F72C4CCA9DCFD2D305CD5EF` — `LemonTracking-Windows-x64-Portable.zip`
+          - `4EB0F5AB847584E9B017F772FA0E5FF551327DEA8F85DD983AB43292070752B4` — `LemonTracking-macOS-arm64.tar.gz`
+          - `E74B0C45536811D9785759DB1EC1EED4C1E9ABC050851C25EE171A8BE42934D4` — `LemonTracking-Linux-x86_64.tar.gz`
+          - `2E6060F4CF1E69A25E74A8FFCDD33474FCDCBBF79AC8611D10FE923F5D998B26` — `LemonTracking-Android.apk`
+          EOF
+
+          gh release create "$tag" \
+            assets/downloads/LemonTracking-Windows-x64-Portable.zip \
+            assets/downloads/LemonTracking-macOS-arm64.tar.gz \
+            assets/downloads/LemonTracking-Linux-x86_64.tar.gz \
+            assets/downloads/LemonTracking-Android.apk \
+            --repo "$GITHUB_REPOSITORY" \
+            --target "$GITHUB_SHA" \
+            --title "Lemon Tracking ${version}" \
+            --notes-file "$RUNNER_TEMP/release-notes.md"
