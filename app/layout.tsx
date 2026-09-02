@@ -19,6 +19,7 @@ const siteSchema = {
       '@type': 'WebSite',
       '@id': 'https://lemontracking.org/#website',
       name: 'Lemon Tracking',
+      alternateName: 'lemontracking.org',
       url: 'https://lemontracking.org/',
       description: 'The official website for Lemon Tracking screen-time measurement software.',
     },

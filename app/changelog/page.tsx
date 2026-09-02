@@ -1,7 +1,11 @@
 import SiteShell from '@/components/site-shell';
 import type { Metadata } from 'next';
 
-export const metadata: Metadata = { title: 'Changelog', alternates: { canonical: '/changelog/' } };
+export const metadata: Metadata = {
+  title: 'Changelog',
+  description: 'Release notes for Lemon Tracking 0.1.2 and earlier versions across Windows, macOS, Linux and Android.',
+  alternates: { canonical: '/changelog/' },
+};
 
 export default function ChangelogPage() {
   return (

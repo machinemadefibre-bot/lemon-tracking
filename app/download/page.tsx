@@ -1,7 +1,11 @@
 import SiteShell from '@/components/site-shell';
 import type { Metadata } from 'next';
 
-export const metadata: Metadata = { title: 'Download', alternates: { canonical: '/download/' } };
+export const metadata: Metadata = {
+  title: 'Download',
+  description: 'Download Lemon Tracking 0.1.2 for Windows x64, macOS Apple Silicon, Linux x86_64 and Android, with file sizes and SHA-256 checksums.',
+  alternates: { canonical: '/download/' },
+};
 
 const portableUrl = '/windows/LemonTracking-Windows-x64-Portable.zip';
 const macosUrl = '/macos/LemonTracking-macOS-arm64.tar.gz';

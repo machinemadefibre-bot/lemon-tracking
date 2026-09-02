@@ -1,7 +1,11 @@
 import SiteShell from '@/components/site-shell';
 import type { Metadata } from 'next';
 
-export const metadata: Metadata = { title: 'Documentation', alternates: { canonical: '/docs/' } };
+export const metadata: Metadata = {
+  title: 'Documentation',
+  description: 'Setup, record fields, platform collectors, local file locations and Android Usage Access instructions for Lemon Tracking 0.1.2.',
+  alternates: { canonical: '/docs/' },
+};
 
 export default function DocsPage() {
   return (

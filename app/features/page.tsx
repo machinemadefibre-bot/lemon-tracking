@@ -1,7 +1,11 @@
 import SiteShell from '@/components/site-shell';
 import type { Metadata } from 'next';
 
-export const metadata: Metadata = { title: 'Features', alternates: { canonical: '/features/' } };
+export const metadata: Metadata = {
+  title: 'Features',
+  description: 'Foreground application records, idle separation, device-aware timelines, manual history and local exports in Lemon Tracking.',
+  alternates: { canonical: '/features/' },
+};
 
 const features = [
   ['Foreground application tracking', 'Records process identity, start, end and duration.'],

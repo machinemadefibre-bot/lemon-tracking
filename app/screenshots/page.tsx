@@ -1,7 +1,11 @@
 import SiteShell from '@/components/site-shell';
 import type { Metadata } from 'next';
 
-export const metadata: Metadata = { title: 'Screenshots', alternates: { canonical: '/screenshots/' } };
+export const metadata: Metadata = {
+  title: 'Screenshots',
+  description: 'Screenshots of Lemon Tracking daily totals, timelines, application summaries, history tools and local settings.',
+  alternates: { canonical: '/screenshots/' },
+};
 
 const shots = [
   ['today', 'Today', 'Daily totals and category bars from the local record set.'],
